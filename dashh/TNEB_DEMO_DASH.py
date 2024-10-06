@@ -6,9 +6,9 @@ import geopandas as gpd #panda for geo spatial data
 from prophet import Prophet #machine learning model for forecast
 
 #location of each and every district of tamilnadu 
-geojson_path = r"C:\Users\91735\Desktop\dash\TamilNadu.geojson" 
+geojson_path = r"TamilNadu.geojson" 
 #data set
-csv_path = r"C:\Users\91735\Desktop\dash\TamilNadu_Electricity_Demand_2023_Monthly.csv"  
+csv_path = r"TamilNadu_Electricity_Demand_2023_Monthly.csv"  
 
 gdf = gpd.read_file(geojson_path)
 df = pd.read_csv(csv_path)
